@@ -43,7 +43,7 @@ const removePerson = () => {
       <h1>{person.name}</h1>
       <h2>{person.title}</h2>
       <img src={person.image} alt={person.name} />
-      <button onClick={removePerson}>Delete</button>
+      <button id="delete" onClick={removePerson}>Delete</button>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

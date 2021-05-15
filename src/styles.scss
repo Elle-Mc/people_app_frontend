@@ -53,3 +53,31 @@ div {
     }
   }
 }
+
+// --------------------------
+// button
+// --------------------------
+
+button#delete {
+  @include white-text-black-bg;
+  //block vs inline (this makes it so the delete button takes up its own row)
+  display: block;
+  // if you want to center the content of a block (you use margin: auto)
+  margin: auto;
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+// --------------------------
+// images
+// --------------------------
+
+// this makes all the images the same size
+img {
+  width: 300px;
+  height: 300px;
+  //this rounds the corners
+  border-radius: 20px;
+  //this makes it not stretched - just fits the object to square
+  object-fit: cover;
+}
