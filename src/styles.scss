@@ -1,0 +1,35 @@
+// --------------------------
+// VARIABLES
+// --------------------------
+
+$maincolor: navy; 
+$contrastcolor: lightblue; 
+
+// if this is a combo you're going to use a lot - you can just call the mixin instaed of re-writing everything
+@mixin white-text-black-bg {
+    color: $contrastcolor;
+    background-color: $maincolor;
+}
+
+@mixin black-text-white-bg {
+    color: $maincolor;
+    background-color: $contrastcolor;
+}
+
+// --------------------------
+// HEADER
+// --------------------------
+
+nav {
+    @include white-text-black-bg;
+    display: flex;
+    justify-content: flex-start;
+    // any styling on an a tag inside of a nav tag
+    a {
+      @include white-text-black-bg;
+      div {
+        margin: 10px;
+        font-size: large;
+      }
+    }
+  }
