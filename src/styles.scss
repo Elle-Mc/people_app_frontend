@@ -48,7 +48,7 @@ div {
       margin: 10px;
 
       &[type="submit"]:hover {
-        @include black-test-white-bg;
+        @include black-text-white-bg;
       }
     }
   }
